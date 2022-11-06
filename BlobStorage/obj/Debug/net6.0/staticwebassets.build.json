@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fSee1DtWOpoCO625zEbRZfDtsM1ofEzmbG3KLbyv7bA=",
+  "Hash": "61KpWaXgqKbHbL/1jJ0l0T6BrUd2LOeukxhVj6rFxGQ=",
   "Source": "BlobStorage",
   "BasePath": "_content/BlobStorage",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\LOPEZDIEGOMANUEL\\source\\repos\\BlobStorage\\BlobStorage\\wwwroot\\img\\qr.png",
+      "SourceId": "BlobStorage",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\LOPEZDIEGOMANUEL\\source\\repos\\BlobStorage\\BlobStorage\\wwwroot\\",
+      "BasePath": "_content/BlobStorage",
+      "RelativePath": "img/qr.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\qr.png"
     },
     {
       "Identity": "C:\\Users\\LOPEZDIEGOMANUEL\\source\\repos\\BlobStorage\\BlobStorage\\wwwroot\\js\\site.js",

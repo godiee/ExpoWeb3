@@ -31,3 +31,5 @@ C:\Users\LOPEZDIEGOMANUEL\source\repos\BlobStorage\BlobStorage\obj\Debug\net6.0\
 C:\Users\LOPEZDIEGOMANUEL\source\repos\BlobStorage\BlobStorage\obj\Debug\net6.0\BlobStorage.pdb
 C:\Users\LOPEZDIEGOMANUEL\source\repos\BlobStorage\BlobStorage\obj\Debug\net6.0\BlobStorage.genruntimeconfig.cache
 C:\Users\LOPEZDIEGOMANUEL\source\repos\BlobStorage\BlobStorage\obj\Debug\net6.0\ref\BlobStorage.dll
+C:\Users\LOPEZDIEGOMANUEL\source\repos\BlobStorage\BlobStorage\bin\Debug\net6.0\BlobStorage.Logica.dll
+C:\Users\LOPEZDIEGOMANUEL\source\repos\BlobStorage\BlobStorage\bin\Debug\net6.0\BlobStorage.Logica.pdb

@@ -1,0 +1,12 @@
+C:\Users\LOPEZDIEGOMANUEL\source\repos\BlobStorage\BlobStorage.Logica\bin\Debug\net6.0\BlobStorage.Logica.deps.json
+C:\Users\LOPEZDIEGOMANUEL\source\repos\BlobStorage\BlobStorage.Logica\bin\Debug\net6.0\BlobStorage.Logica.dll
+C:\Users\LOPEZDIEGOMANUEL\source\repos\BlobStorage\BlobStorage.Logica\bin\Debug\net6.0\BlobStorage.Logica.pdb
+C:\Users\LOPEZDIEGOMANUEL\source\repos\BlobStorage\BlobStorage.Logica\obj\Debug\net6.0\BlobStorage.Logica.csproj.AssemblyReference.cache
+C:\Users\LOPEZDIEGOMANUEL\source\repos\BlobStorage\BlobStorage.Logica\obj\Debug\net6.0\BlobStorage.Logica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LOPEZDIEGOMANUEL\source\repos\BlobStorage\BlobStorage.Logica\obj\Debug\net6.0\BlobStorage.Logica.AssemblyInfoInputs.cache
+C:\Users\LOPEZDIEGOMANUEL\source\repos\BlobStorage\BlobStorage.Logica\obj\Debug\net6.0\BlobStorage.Logica.AssemblyInfo.cs
+C:\Users\LOPEZDIEGOMANUEL\source\repos\BlobStorage\BlobStorage.Logica\obj\Debug\net6.0\BlobStorage.Logica.csproj.CoreCompileInputs.cache
+C:\Users\LOPEZDIEGOMANUEL\source\repos\BlobStorage\BlobStorage.Logica\obj\Debug\net6.0\BlobStorage.Logica.dll
+C:\Users\LOPEZDIEGOMANUEL\source\repos\BlobStorage\BlobStorage.Logica\obj\Debug\net6.0\refint\BlobStorage.Logica.dll
+C:\Users\LOPEZDIEGOMANUEL\source\repos\BlobStorage\BlobStorage.Logica\obj\Debug\net6.0\BlobStorage.Logica.pdb
+C:\Users\LOPEZDIEGOMANUEL\source\repos\BlobStorage\BlobStorage.Logica\obj\Debug\net6.0\ref\BlobStorage.Logica.dll

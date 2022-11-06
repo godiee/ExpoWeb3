@@ -15,8 +15,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\LOPEZDIEGOMANUEL\source\repos\BlobStorage\BlobStorage
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/LOPEZDIEGOMANUEL/source/repos/BlobStorage/BlobStorage/Views/BlobStorage/Detalles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvYlN0b3JhZ2VcRGV0YWxsZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/LOPEZDIEGOMANUEL/source/repos/BlobStorage/BlobStorage/Views/BlobStorage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvYlN0b3JhZ2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LOPEZDIEGOMANUEL/source/repos/BlobStorage/BlobStorage/Views/BlobStorage/UploadImagen.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvYlN0b3JhZ2VcVXBsb2FkSW1hZ2VuLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/LOPEZDIEGOMANUEL/source/repos/BlobStorage/BlobStorage/Views/Shared/Error.cshtml]

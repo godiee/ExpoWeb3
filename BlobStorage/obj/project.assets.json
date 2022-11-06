@@ -158,6 +158,19 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
+      },
+      "BlobStorage.Logica/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Azure.Storage.Blobs": "12.14.1"
+        },
+        "compile": {
+          "bin/placeholder/BlobStorage.Logica.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlobStorage.Logica.dll": {}
+        }
       }
     }
   },
@@ -438,11 +451,17 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "BlobStorage.Logica/1.0.0": {
+      "type": "project",
+      "path": "../BlobStorage.Logica/BlobStorage.Logica.csproj",
+      "msbuildProject": "../BlobStorage.Logica/BlobStorage.Logica.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Azure.Storage.Blobs >= 12.14.1"
+      "Azure.Storage.Blobs >= 12.14.1",
+      "BlobStorage.Logica >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -471,7 +490,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\LOPEZDIEGOMANUEL\\source\\repos\\BlobStorage\\BlobStorage.Logica\\BlobStorage.Logica.csproj": {
+              "projectPath": "C:\\Users\\LOPEZDIEGOMANUEL\\source\\repos\\BlobStorage\\BlobStorage.Logica\\BlobStorage.Logica.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

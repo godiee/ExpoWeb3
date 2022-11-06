@@ -1,38 +1,49 @@
-﻿using Azure.Storage.Blobs;
-using BlobStorage.Models;
+﻿using BlobStorage.Logica;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BlobStorage.Controllers
+namespace BlobStorage.Controllers;
+
+public class BlobStorageController : Controller
 {
-    public class BlobStorageController : Controller
+    private IServiceBlobStorage _serviceBlobStorage;
+
+    public BlobStorageController(IServiceBlobStorage serviceBlobStorage)
     {
-        public readonly BlobServiceClient _blob;
+        _serviceBlobStorage = serviceBlobStorage;
+    }
 
-        public BlobStorageController(BlobServiceClient blob)
+    public async Task<IActionResult> Index()
+    {
+        List<string>imagenes = await _serviceBlobStorage.GetBlobAsync();
+        return View(imagenes);
+    }
+
+    public IActionResult UploadImagen()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> UploadImagen(string nombreImagen, IFormFile imagenBBDD)
+    {
+        string extension = imagenBBDD.FileName.Split(".")[1];
+        string fileName = nombreImagen.Trim() + "." + extension;
+        using (Stream stream = imagenBBDD.OpenReadStream())
         {
-            _blob = blob;
+            await _serviceBlobStorage.UploadBlobAsync(fileName, stream);
         }
 
-        public IActionResult Index()
-        {
-            return View();
-        }
+        return RedirectToAction("Index");
+    }
 
-        public async Task<String> Cargar(IFormFile file)
-        {
-            String mensaje;
-            try
-            {
-                BlobContainerClient contenedor = _blob.GetBlobContainerClient("imagenes");
-                await contenedor.UploadBlobAsync(file.FileName, file.OpenReadStream());
-                mensaje = "Se Cargo Exitosamente";
-            }
-            catch (Exception ex)
-            {
-                mensaje = ex.Message;
-            }
+    public IActionResult Detalles()
+    {
+        return View();
+    }
 
-            return mensaje;
-        }
+    public async Task<IActionResult> Delete(string nombre)
+    {
+        await _serviceBlobStorage.DeleteBlobAsync(nombre);
+        return RedirectToAction("Index");
     }
 }

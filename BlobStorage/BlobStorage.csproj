@@ -10,4 +10,12 @@
     <PackageReference Include="Azure.Storage.Blobs" Version="12.14.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BlobStorage.Logica\BlobStorage.Logica.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\img\" />
+  </ItemGroup>
+
 </Project>
