@@ -1,4 +1,5 @@
-﻿using BlobStorage.Logica;
+﻿using BlobStorage.Data.EF;
+using BlobStorage.Logica;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BlobStorage.Controllers;
@@ -6,10 +7,12 @@ namespace BlobStorage.Controllers;
 public class BlobStorageController : Controller
 {
     private IServiceBlobStorage _serviceBlobStorage;
+    private IServiceLogAlbum _serviceLogAlbum;
 
-    public BlobStorageController(IServiceBlobStorage serviceBlobStorage)
+    public BlobStorageController(IServiceBlobStorage serviceBlobStorage, IServiceLogAlbum serviceLogAlbum)
     {
         _serviceBlobStorage = serviceBlobStorage;
+        _serviceLogAlbum = serviceLogAlbum;
     }
 
     public async Task<IActionResult> Index()
@@ -24,7 +27,7 @@ public class BlobStorageController : Controller
     }
 
     [HttpPost]
-    public async Task<IActionResult> UploadImagen(string nombreImagen, IFormFile imagenBBDD)
+    public async Task<IActionResult> UploadImagen(string nombreImagen, string nombreUsuario, IFormFile imagenBBDD)
     {
         string extension = imagenBBDD.FileName.Split(".")[1];
         string fileName = nombreImagen.Trim() + "." + extension;
@@ -32,6 +35,13 @@ public class BlobStorageController : Controller
         {
             await _serviceBlobStorage.UploadBlobAsync(fileName, stream);
         }
+
+        LogAlbum logAlbum = new LogAlbum();
+        logAlbum.NombreUsuario = nombreUsuario;
+        logAlbum.NombreImagen = nombreImagen;
+        logAlbum.FechaHora = DateTime.Now;
+        
+        _serviceLogAlbum.insertar(logAlbum);
 
         return RedirectToAction("Index");
     }

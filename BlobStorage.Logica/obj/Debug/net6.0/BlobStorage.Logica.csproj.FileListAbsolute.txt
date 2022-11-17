@@ -10,3 +10,8 @@ C:\Users\LOPEZDIEGOMANUEL\source\repos\BlobStorage\BlobStorage.Logica\obj\Debug\
 C:\Users\LOPEZDIEGOMANUEL\source\repos\BlobStorage\BlobStorage.Logica\obj\Debug\net6.0\refint\BlobStorage.Logica.dll
 C:\Users\LOPEZDIEGOMANUEL\source\repos\BlobStorage\BlobStorage.Logica\obj\Debug\net6.0\BlobStorage.Logica.pdb
 C:\Users\LOPEZDIEGOMANUEL\source\repos\BlobStorage\BlobStorage.Logica\obj\Debug\net6.0\ref\BlobStorage.Logica.dll
+C:\Users\LOPEZDIEGOMANUEL\source\repos\BlobStorage\BlobStorage.Logica\bin\Debug\net6.0\BlobStorage.Logica.runtimeconfig.json
+C:\Users\LOPEZDIEGOMANUEL\source\repos\BlobStorage\BlobStorage.Logica\obj\Debug\net6.0\BlobStorage.Logica.genruntimeconfig.cache
+C:\Users\LOPEZDIEGOMANUEL\source\repos\BlobStorage\BlobStorage.Logica\bin\Debug\net6.0\BlobStorage.Data.dll
+C:\Users\LOPEZDIEGOMANUEL\source\repos\BlobStorage\BlobStorage.Logica\bin\Debug\net6.0\BlobStorage.Data.pdb
+C:\Users\LOPEZDIEGOMANUEL\source\repos\BlobStorage\BlobStorage.Logica\obj\Debug\net6.0\BlobStorage.Logica.csproj.CopyComplete
