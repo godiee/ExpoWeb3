@@ -56,4 +56,9 @@ public class BlobStorageController : Controller
         await _serviceBlobStorage.DeleteBlobAsync(nombre);
         return RedirectToAction("Index");
     }
+
+    public IActionResult Logs()
+    {
+        return View(_serviceLogAlbum.obtenerLogAlbumOrdenadosPorFecha());
+    }
 }

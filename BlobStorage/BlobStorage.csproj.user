@@ -6,5 +6,11 @@
     <View_SelectedScaffolderID>RazorViewEmptyScaffolder</View_SelectedScaffolderID>
     <View_SelectedScaffolderCategoryPath>root/Common/MVC/View</View_SelectedScaffolderCategoryPath>
     <NameOfLastUsedPublishProfile>C:\Users\LOPEZDIEGOMANUEL\source\repos\BlobStorage\BlobStorage\Properties\PublishProfiles\InvestigacionWeb3 - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
+    <WebStackScaffolding_ViewDialogWidth>650</WebStackScaffolding_ViewDialogWidth>
+    <WebStackScaffolding_IsLayoutPageSelected>True</WebStackScaffolding_IsLayoutPageSelected>
+    <WebStackScaffolding_IsPartialViewSelected>False</WebStackScaffolding_IsPartialViewSelected>
+    <WebStackScaffolding_IsReferencingScriptLibrariesSelected>True</WebStackScaffolding_IsReferencingScriptLibrariesSelected>
+    <WebStackScaffolding_LayoutPageFile />
+    <WebStackScaffolding_DbContextTypeFullName>BlobStorage.Data.EF.AlbumProdContext</WebStackScaffolding_DbContextTypeFullName>
   </PropertyGroup>
 </Project>

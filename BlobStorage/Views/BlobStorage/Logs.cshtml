@@ -1,0 +1,27 @@
+﻿@using BlobStorage.Data.EF
+@model List<LogAlbum>
+
+<h1>Auditoría del álbum</h1>
+
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Nombre Imagen</th>
+        <th>Autor</th>
+        <th>Fecha y hora de subida</th>
+    </tr>
+    @if(Model != null)
+    {
+        @foreach (var log in Model)
+        {
+            <tr>
+                <td>@log.Id</td>
+                <td>@log.NombreImagen</td>
+                <td>@log.NombreUsuario</td>
+                <td>@log.FechaHora</td>
+                <td>Eliminar registro</td>
+            </tr>
+        }
+    }
+
+</table>
