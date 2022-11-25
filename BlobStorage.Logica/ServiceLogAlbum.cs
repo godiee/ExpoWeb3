@@ -9,9 +9,13 @@ namespace BlobStorage.Logica
 {
     public interface IServiceLogAlbum 
     {
-        void insertar(LogAlbum logAlbum);
+        void Insertar(LogAlbum logAlbum);
 
-        List<LogAlbum> obtenerLogAlbumOrdenadosPorFecha();
+        List<LogAlbum> ObtenerLogAlbumOrdenadosPorFecha();
+
+        LogAlbum ObtenerLogPorId(int id);
+
+        void Eliminar(LogAlbum logAlbum);   
 
     }
     public class ServiceLogAlbum : IServiceLogAlbum
@@ -23,15 +27,26 @@ namespace BlobStorage.Logica
             _albumProdContext = albumProdContext;
         }
 
-        public void insertar(LogAlbum logAlbum)
+        public void Insertar(LogAlbum logAlbum)
         {
             _albumProdContext.LogAlbums.Add(logAlbum);
             _albumProdContext.SaveChanges();
         }
 
-        public List<LogAlbum> obtenerLogAlbumOrdenadosPorFecha()
+        public List<LogAlbum> ObtenerLogAlbumOrdenadosPorFecha()
         {
             return _albumProdContext.LogAlbums.OrderBy(f => f.FechaHora).ToList();
+        }
+
+        public LogAlbum ObtenerLogPorId(int id)
+        {
+            return _albumProdContext.LogAlbums.Find(id);
+        }
+
+        public void Eliminar(LogAlbum logAlbum)
+        {
+            _albumProdContext.LogAlbums.Remove(logAlbum);
+            _albumProdContext.SaveChanges();
         }
     }
 }

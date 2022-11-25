@@ -41,7 +41,7 @@ public class BlobStorageController : Controller
         logAlbum.NombreImagen = nombreImagen;
         logAlbum.FechaHora = DateTime.Now;
         
-        _serviceLogAlbum.insertar(logAlbum);
+        _serviceLogAlbum.Insertar(logAlbum);
 
         return RedirectToAction("Index");
     }
@@ -54,6 +54,21 @@ public class BlobStorageController : Controller
     public async Task<IActionResult> Delete(string nombre)
     {
         await _serviceBlobStorage.DeleteBlobAsync(nombre);
+        return RedirectToAction("Index");
+    }
+
+    public IActionResult Logs()
+    {
+        return View(_serviceLogAlbum.ObtenerLogAlbumOrdenadosPorFecha());
+    }
+
+    public IActionResult EliminarLog(int id)
+    {
+        var log = _serviceLogAlbum.ObtenerLogPorId(id);
+        if(log != null)
+        {
+            _serviceLogAlbum.Eliminar(log);
+        }
         return RedirectToAction("Index");
     }
 }
