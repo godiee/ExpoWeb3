@@ -15,7 +15,9 @@ namespace BlobStorage.Logica
 
         LogAlbum ObtenerLogPorId(int id);
 
-        void Eliminar(LogAlbum logAlbum);   
+        void Eliminar(LogAlbum logAlbum);
+
+        DateTime ObtenerFechaHoraConOffset(Double offset);
 
     }
     public class ServiceLogAlbum : IServiceLogAlbum
@@ -47,6 +49,11 @@ namespace BlobStorage.Logica
         {
             _albumProdContext.LogAlbums.Remove(logAlbum);
             _albumProdContext.SaveChanges();
+        }
+
+        public DateTime ObtenerFechaHoraConOffset(double offset)
+        {
+            return DateTime.UtcNow.AddHours(offset);
         }
     }
 }

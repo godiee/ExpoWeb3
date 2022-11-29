@@ -36,10 +36,11 @@ public class BlobStorageController : Controller
             await _serviceBlobStorage.UploadBlobAsync(fileName, stream);
         }
 
+        const Double OFFSET_ARGENTINA = -3;
         LogAlbum logAlbum = new LogAlbum();
         logAlbum.NombreUsuario = nombreUsuario;
         logAlbum.NombreImagen = nombreImagen;
-        logAlbum.FechaHora = DateTime.Now;
+        logAlbum.FechaHora = _serviceLogAlbum.ObtenerFechaHoraConOffset(OFFSET_ARGENTINA);
         
         _serviceLogAlbum.Insertar(logAlbum);
 
